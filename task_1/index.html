@@ -8,24 +8,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
-   
-                
+
 </head>
 <body>  
 
     <div class="wrapper">
         <div class="header">
-            <div class="Navbar">
-                <img  src="assets/coffee-beans.png" alt="coffee beans" class="Nav-items same-size" >
-                    <a class="Nav-items" href="http://">Home</a>
-                    <a class="Nav-items" href="http://">About Us</a>
-                    <a class="Nav-items" href="http://">Ourlands</a>
-                    <a class="Nav-items" href="http://">Suppliers</a>
-                    <a class="Nav-items" href="http://">Products</a>
-                    <a class="Nav-items"href="http://">Contact Us</a>
+                <div class="coffeebens">
+                <img  src="assets/coffee-beans.png" alt="coffee beans" class="same-size" >
+            </div>
+                <div>
+                    <a class="Nav-items menue-item  " href="http://" onclick="onMenueItemClick('itemHome')" id="itemHome">Home</a>
+                    <a class="Nav-items menue-item " href="http://"  onclick="onMenueItemClick('itemAboutUs')" id="itemAboutUs">About Us</a>
+                    <a class="Nav-items menue-item " href="http://" onclick="onMenueItemClick('itemOurlands')" id="itemOurlands">Ourlands</a>
+                    <a class="Nav-items menue-item " href="http://" onclick="onMenueItemClick('itemSuppliers')" id="itemSuppliers">Suppliers</a>
+                    <a class="Nav-items menue-item " href="http://" onclick="onMenueItemClick('itemProducts')" id="itemProducts">Products</a>
+                    <a class="Nav-items menue-item " href="http://" onclick="onMenueItemClick('itemContactUs')" id="itemContactUs">Contact Us</a>
+            </div>
+                    <div>
                     <img src="assets/shopping-cart.png" alt="shopping cart " class="same-size" >
                     <img  src="assets/profile Image.png" alt="profileImages" class="img-profile" >
-            </div>
+                    </div>
         </div>
         <div class="main">
             <div class="hero-image">
@@ -70,8 +73,8 @@
                                 from roasted coffee beans, the seeds of berries from certain Coffea species.</p>
                         </div>
                     </div>
-                    <div class="viewmore">
-                        <div >
+                    <div>
+                        <div class="coffee-item viewmore" >
                             <img src="assets/image 2.png" alt="view more" srcset="">
                             <p class="Ps">View More</p>
     
@@ -151,5 +154,6 @@
         </div>
 
     </div>
+    <script src="index.js"></script>
 </body>
 </html>

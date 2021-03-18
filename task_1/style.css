@@ -9,49 +9,55 @@
   src: url(./fonts/FontsFree-Net-ProductSans-Regular.ttf);
 }
 
-
 .wrapper{
+  background: #E5E5E5;
   margin: 0 auto;
   max-width: 1470px;
 }
 
 .header{
+  align-items: center;
+  display: flex;
   height: 80px;
+  justify-content: space-between;
   width: 100%;
 }
 
+.menue-item:hover{
+  background-color: red;
+}
 
-.Navbar{
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-
+.active{
+  background-color: yellow;
 }
 
 .Nav-items{
-  display: flex;
-  margin: auto;
-  
+  margin: 15px;
+  text-decoration: none;
 }
 
 .main{
   display: flex;
+  margin-top: 60px;
   padding-bottom: 32px;
   
 }
 
 .hero-image{
+  background-color: white;
   min-width: 320px;
+  margin-left: 10px;
 }
 
 .img-profile{
-  height: 60px;
+  height: 55px;
   width: 200px;
 }
 
 .same-size{
   height: 50px;
-  width: 50px;
+  margin-top: 10px;
+  width: 40px;
 }
 
 .hero-text{
@@ -84,7 +90,7 @@
 .coffee-list{
   align-items: center;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .coffee-item{
@@ -103,21 +109,23 @@
   padding-top: 3rem;
 }
 
-
 .viewmore{
   height: 10px;
-  margin: auto;
   width: 90px;
 }
   
-
 .text-banner-color{
  color: red;
- font-size: ;
+ font-family: "products san";
 }
 
 .fs{
-  text-align: start;
-  font-size: 35px;
+  font-size: 40px;
   margin-top: 20px;
+  text-align: start;
+}
+
+
+.coffeebens{
+  margin-left: 45px;
 }

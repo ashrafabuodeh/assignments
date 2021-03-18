@@ -10,9 +10,6 @@ const onMenueItemClick = (elementId)=>{
 
         document.getElementById(elementId).classList.add('active');
         
-       
-
-       
     }
     
 

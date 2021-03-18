@@ -9,10 +9,41 @@
   src: url(./fonts/FontsFree-Net-ProductSans-Regular.ttf);
 }
 
-.wrapper{
+body{
   background: #E5E5E5;
+}
+
+.wrapper{
   margin: 0 auto;
-  max-width: 1470px;
+  max-width: 1440px;
+}
+
+@media  screen and (max-width :1250px){
+  .hero-image {
+    display: none;
+  
+  }
+}
+
+@media  screen and (max-width :1050px){
+  .viewmore {
+    display: none;
+  
+  }
+}
+
+
+@media  screen and (max-width :621px){
+  .coffee2 {
+    display: none;
+  }
+}
+
+@media  screen and (max-width :926px){
+  .coffee3 {
+    display: none;
+  
+  }
 }
 
 .header{
@@ -117,14 +148,13 @@
 .text-banner-color{
  color: red;
  font-family: "products san";
-}
+}   
 
 .fs{
   font-size: 40px;
   margin-top: 20px;
   text-align: start;
 }
-
 
 .coffeebens{
   margin-left: 45px;

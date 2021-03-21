@@ -10,7 +10,7 @@ body{
   background: #E5E5E5;
 }
 .wrapper{
-  margin: 0 auto;
+  margin: 0 auto ; 
   max-width: 1470px;
 }
 .header{
@@ -35,13 +35,13 @@ body{
 }
 .main{
   display: flex;
-  margin-top: 60px;
-  padding-bottom: 32px;
+  margin: 60px 0 0 0 0;
+  padding: 0 0 32px 0;
 }
 .hero-image{
   background-color: white;
   min-width: 320px;
-  margin-left: 10px;
+  margin: 30px 0 0 0;
 }
 .img-profile{
   height: 55px;
@@ -89,7 +89,7 @@ body{
   display: grid;
   grid-gap: 32px;
   grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-  padding-top: 3rem;
+  padding: 3rem 0 0 0;
 }
 .viewmore-img{
   height: 10px;
@@ -101,9 +101,9 @@ body{
 }
 .title-Barsley-coffee{
   font-size: 40px;
-  margin-top: 20px;
+  margin: 20px 0 0 0;
   text-align: start;
 }
 .coffeebens{
-  margin-left: 45px;
+  margin: 0 0 0 45px;
 }

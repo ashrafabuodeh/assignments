@@ -2,17 +2,21 @@
   font-family: "google sans" ;
   src: url(./fonts/google-sans-cufonfonts-webfont/ProductSans-Light.woff);
 }
+
 @font-face{
   font-family: "products san" ;
-  src: url(./fonts/FontsFree-Net-ProductSans-Regular.ttf);
+  src:
+   url(./fonts/FontsFree-Net-ProductSans-Regular.ttf);
 }
 body{
   background: #E5E5E5;
 }
+
 .wrapper{
   margin: 0 auto ; 
   max-width: 1470px;
 }
+
 .header{
   align-items: center;
   display: flex;
@@ -20,90 +24,118 @@ body{
   justify-content: space-between;
   width: 100%;
 }
-.left-header-img{
+
+.leftHeaderImg{
   display: flex;
 }
-.menue-item:hover{
+
+.menueItem:hover{
   background-color: red;
 }
+
 .active{
   background-color: yellow;
 }
-.Nav-items{
+
+.navItems{
   margin: 15px;
   text-decoration: none;
 }
+
 .main{
   display: flex;
   margin: 60px 0 0 0 0;
   padding: 0 0 32px 0;
 }
-.hero-image{
+
+.allLinksNavBar{
+  display: flex;
+}
+
+.heroImage{
   background-color: white;
-  min-width: 320px;
-  margin: 30px 0 0 0;
+  margin: 75px 0 0 0;
+  min-width: 150px;
 }
-.img-profile{
+
+.imgProfile{
   height: 55px;
-  min-width: 120px;
+  min-width: 150px;
 }
-.shopping-cart-size{
+
+.shoppingCartSize{
   width: 25px;
 }
-.coffeebens-size{
+
+.coffeebensSize{
   width: 40px;
 }
-.hero-text{
+
+.heroText{
   text-align: center;
 }
-.Google-sans-font{
+
+.googleSansFont{
   font-family: 'google sans';
   text-align: center  ;
 }
-.text-w{
+
+.textBelowBarnsleyCoffee{
   width: 390px;
 }
-.Product-sans-font{
+
+.productSansFont{
   font-family: "products san";
   text-align: center;
 }
-.hero-banner{
+
+.heroBanner{
   flex: 1;
 }
-.text-banner{
+
+.textBanner{
+  margin: 35px 0 0 20px;
   padding: 10px 30px;
 }
-.coffee-list{
+
+.coffeeList{
   align-items: center;
   display: flex;
   justify-content: space-around;
 }
-.coffee-item{
+
+.coffeeItem{
   background-color: white;
   height: 450px;
   margin: 50px;
   width: 217px;
 }
-.grid-items{
+
+.gridItems{
   background: linear-gradient(180deg, rgba(228, 239, 233, 0) 0%, #ECF8F1 6.25%);
   display: grid;
   grid-gap: 32px;
   grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
   padding: 3rem 0 0 0;
 }
-.viewmore-img{
+
+.viewmoreImg{
   height: 10px;
   width: 90px;
 }
-.text-banner-color{
+
+.textBannerColor{
  color: red;
  font-family: "products san";
 }
-.title-Barsley-coffee{
+
+.titleBarsleyCoffee{
   font-size: 40px;
   margin: 20px 0 0 0;
   text-align: start;
 }
+
 .coffeebens{
   margin: 0 0 0 45px;
 }
+

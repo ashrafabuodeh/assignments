@@ -1,3 +1,6 @@
+console.log(localStorage);
+localStorage.setItem('aaaa','10');
+console.log(localStorage.getItem('aaaa'));
 const email = document.getElementById("email");
 const companyName = document.getElementById("companyName");
 const password = document.getElementById("password1");
@@ -32,12 +35,13 @@ function checkValidate(e) {
             document.getElementById("passwordCheckError").innerHTML = "";
         }
     }
-    if (city.value == "Choose Your City") {
+    if (city.value === "Choose Your City") {
         document.getElementById("optionError").innerHTML = "please select a City ";
         check = false;
     } else {
         document.getElementById("optionError").innerHTML = "";
     }
+    if(check)
     adduser(email, companyName, password, city);
 }
 function adduser(email, companyName, password, city) {
@@ -48,9 +52,12 @@ function adduser(email, companyName, password, city) {
         city: city.value,
     };
     const convertToJSON = JSON.stringify(user);
-    for(let i = 0;i < localStorage.length; i++)
+    for(let i = 0; i < localStorage.length; i++)
     {
         if(localStorage.getItem(email.value) === null)
+        {
         localStorage.setItem(email.value, convertToJSON);
+        }
     }
 }
+

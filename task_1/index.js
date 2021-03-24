@@ -1,12 +1,10 @@
 const onMenueItemClick = (elementId)=>{
-     const itemClick = document.getElementById(elementId) ;
-    const NumberOfItem = document.getElementsByClassName('Nav-items').length;
-         for(let i = 0 ; i < NumberOfItem; i++){
-            if(document.getElementsByClassName('Nav-items')[i].classList.contains('active')){
-                document.getElementsByClassName('Nav-items')[i].classList.remove('active');
+    const numberOfItem = document.getElementsByClassName('nav-items').length;
+         for(let i = 0 ; i < numberOfItem; i++){
+            if(document.getElementsByClassName('nav-items')[i].classList.contains('active')){
+                document.getElementsByClassName('nav-items')[i].classList.remove('active');
          }
         }
         document.getElementById(elementId).classList.add('active');       
     } 
-    
     

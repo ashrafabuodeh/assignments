@@ -8,6 +8,7 @@
   src:
    url(./fonts/FontsFree-Net-ProductSans-Regular.ttf);
 }
+
 body{
   background: #E5E5E5;
 }
@@ -25,11 +26,11 @@ body{
   width: 100%;
 }
 
-.leftHeaderImg{
+.left-header-img{
   display: flex;
 }
 
-.menueItem:hover{
+.menu-item:hover{
   background-color: red;
 }
 
@@ -37,7 +38,7 @@ body{
   background-color: yellow;
 }
 
-.navItems{
+.nav-items{
   margin: 15px;
   text-decoration: none;
 }
@@ -48,70 +49,70 @@ body{
   padding: 0 0 32px 0;
 }
 
-.allLinksNavBar{
+.all-links-navbar{
   display: flex;
 }
 
-.heroImage{
+.hero-image{
   background-color: white;
   margin: 75px 0 0 0;
   min-width: 150px;
 }
 
-.imgProfile{
+.img-profile{
   height: 55px;
   min-width: 150px;
 }
 
-.shoppingCartSize{
+.shopping-cart-size{
   width: 25px;
 }
 
-.coffeebensSize{
+.coffee-bens-size{
   width: 40px;
 }
 
-.heroText{
+.hero-text{
   text-align: center;
 }
 
-.googleSansFont{
+.google-sans-font{
   font-family: 'google sans';
   text-align: center  ;
 }
 
-.textBelowBarnsleyCoffee{
+.text-below-barnsley-coffee{
   width: 390px;
 }
 
-.productSansFont{
+.product-sans-font{
   font-family: "products san";
   text-align: center;
 }
 
-.heroBanner{
+.hero-banner{
   flex: 1;
 }
 
-.textBanner{
+.text-banner{
   margin: 35px 0 0 20px;
   padding: 10px 30px;
 }
 
-.coffeeList{
+.coffee-list{
   align-items: center;
   display: flex;
   justify-content: space-around;
 }
 
-.coffeeItem{
+.coffee-item{
   background-color: white;
   height: 450px;
   margin: 50px;
   width: 217px;
 }
 
-.gridItems{
+.grid-items{
   background: linear-gradient(180deg, rgba(228, 239, 233, 0) 0%, #ECF8F1 6.25%);
   display: grid;
   grid-gap: 32px;
@@ -119,23 +120,22 @@ body{
   padding: 3rem 0 0 0;
 }
 
-.viewmoreImg{
+.view-more-img{
   height: 10px;
   width: 90px;
 }
 
-.textBannerColor{
+.text-banner-color{
  color: red;
  font-family: "products san";
 }
 
-.titleBarsleyCoffee{
+.title-barsley-coffee{
   font-size: 40px;
   margin: 20px 0 0 0;
   text-align: start;
 }
 
-.coffeebens{
+.coffee-bens{
   margin: 0 0 0 45px;
 }
-

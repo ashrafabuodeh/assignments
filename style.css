@@ -1,5 +1,5 @@
 .container {
-    height: 550px;
+    height: 800px;
     margin: 0 auto;
     text-align: center;
     width: 700px;
@@ -7,7 +7,7 @@
 
 body {
     background-color: aqua;
-}
+} 
 
 .header {
     height: 50px;
@@ -20,9 +20,8 @@ body {
     flex-direction: column;
 }
 
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+::-webkit-input-placeholder {
     font-size: 20px;
-    margin-right: 10px ;
   }
 
 .input-field {

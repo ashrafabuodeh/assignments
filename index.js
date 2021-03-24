@@ -1,6 +1,3 @@
-console.log(localStorage);
-localStorage.setItem('aaaa','10');
-console.log(localStorage.getItem('aaaa'));
 const email = document.getElementById("email");
 const companyName = document.getElementById("companyName");
 const password = document.getElementById("password1");

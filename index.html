@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="headerTitle"><h2>Create Account</h2></div>
+            </div>
+            <div class="main">
+                <div class="formAll">
+                    <form action="" name="form" onsubmit="checkValidate(event)">
+                        <p id="emailError"></p>
+                        <div class="formField"><input type="text" class="inputFeild" id="email" placeholder="Email Address" /></div>
+                        <p id="companyError"></p>
+                        <div class="formField"><input type="text" class="inputFeild" id="companyName" placeholder="Company Name" /></div>
+                        <p id="passwordError"></p>
+                        <div class="formField"><input type="password" class="inputFeild" id="password1" placeholder="Password" /></div>
+                        <p id="passwordCheckError"></p>
+                        <div class="formField"><input type="password" class="inputFeild" id="password2" placeholder="Confirm password" /></div>
+                        <div class="formField">
+                            <p id="optionError"></p>
+                            <select id="city" class="selectorFeild">
+                                <option default disabled selected hidden>Choose Your City</option>
+                                <option value="Jordan">Jordan</option>
+                                <option value="Japan">Japan</option>
+                                <option value="America">America</option>
+                                <option value="Oman">Oman</option>
+                            </select>
+                        </div>
+
+                        <div class="formField"><button type="submit" class="submitFeild">Submit</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+    
+</html>

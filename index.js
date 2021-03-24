@@ -56,6 +56,10 @@ function adduser(email, companyName, password, city) {
         localStorage.setItem(email.value, convertToJSON);
         location.replace("task_1/index.html");
         }
+        else
+        {
+            document.getElementById("emailError").innerHTML = "This email is exist";
+        }
     }
 }
 

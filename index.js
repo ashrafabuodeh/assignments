@@ -21,7 +21,7 @@ function checkValidate(e) {
     }
     const regularExpressionForPassword = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,15}$/;
     if (!regularExpressionForPassword.test(password.value)) {
-        document.getElementById("passwordError").innerHTML = "Password is invalid";
+        document.getElementById("passwordError").innerHTML = "Password must have 8 or more characters with a mix of letters, numbers & symbols.";
         check = false;
     } else {
         document.getElementById("passwordError").innerHTML = "";

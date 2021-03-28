@@ -54,7 +54,7 @@ function adduser(email, companyName, password, city) {
         if(localStorage.getItem(email.value) === null)
         {
         localStorage.setItem(email.value, convertToJSON);
-        location.replace("task_1/index.html");
+        location.replace("../task_1/index.html");
         }
         else
         {
@@ -62,4 +62,3 @@ function adduser(email, companyName, password, city) {
         }
     }
 }
-

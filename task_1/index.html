@@ -1,159 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Style</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
-
 </head>
-<body>  
 
+<body>
     <div class="wrapper">
         <div class="header">
-                <div class="coffeebens">
-                <img  src="assets/coffee-beans.png" alt="coffee beans" class="same-size" >
+            <div class="coffee-bens">
+                <img src="assets/coffee-beans.png" alt="coffee beans"
+                    class="coffee-bens-size margin-right-with-Burger-menu">
             </div>
-                <div>
-                    <a class="Nav-items menue-item  " href="http://" onclick="onMenueItemClick('itemHome')" id="itemHome">Home</a>
-                    <a class="Nav-items menue-item " href="http://"  onclick="onMenueItemClick('itemAboutUs')" id="itemAboutUs">About Us</a>
-                    <a class="Nav-items menue-item " href="http://" onclick="onMenueItemClick('itemOurlands')" id="itemOurlands">Ourlands</a>
-                    <a class="Nav-items menue-item " href="http://" onclick="onMenueItemClick('itemSuppliers')" id="itemSuppliers">Suppliers</a>
-                    <a class="Nav-items menue-item " href="http://" onclick="onMenueItemClick('itemProducts')" id="itemProducts">Products</a>
-                    <a class="Nav-items menue-item " href="http://" onclick="onMenueItemClick('itemContactUs')" id="itemContactUs">Contact Us</a>
+            <img src="./assets/menu.png" alt="icon menue" class="icon-menu" onclick="clickOnBurgerIcon('toggle')"
+                id="#toggle">
+            <div id="all-links-navbar">
+                <a class="nav-items menu-item  " onclick="onMenueItemClick('item-home')" id="item-home">Home</a>
+                <a class="nav-items menu-item " onclick="onMenueItemClick('item-about-us')" id="item-about-us">About
+                    Us</a>
+                <a class="nav-items menu-item " onclick="onMenueItemClick('item-our-lands')"
+                    id="item-our-lands">Ourlands</a>
+                <a class="nav-items menu-item " onclick="onMenueItemClick('item-suppliers')"
+                    id="item-suppliers">Suppliers</a>
+                <a class="nav-items menu-item " onclick="onMenueItemClick('item-products')"
+                    id="item-products">Products</a>
+                <a class="nav-items menu-item" onclick="onMenueItemClick('item-contact-us')"
+                    id="item-contact-us">Contact Us</a>
             </div>
-                    <div>
-                    <img src="assets/shopping-cart.png" alt="shopping cart " class="same-size" >
-                    <img  src="assets/profile Image.png" alt="profileImages" class="img-profile" >
-                    </div>
+            <div class="left-header-images">
+                <img src="assets/shopping-cart.png" alt="shopping cart " class="shopping-cart-size">
+                <img src="assets/profile-image.png" alt="profileImages" class="img-profile">
+            </div>
         </div>
         <div class="main">
             <div class="hero-image">
-            <img  src="assets/MOCHA LATE.png" alt="MOCHA LATE" srcset="">
-            <div class="hero-text">
-            <p class="Ps">Mocha Late</p>
-            <p class="Gs">Coffee is a brewed drink prepared 
-                from roasted coffee beans, the seeds of berries from certain Coffea species.</p>
-            <pre class="Ps">1 Bag                                            $69.99</pre>
-            </div>
+                <img src="assets/mocha-late-9.png" alt="MOCHA LATE">
+                <div class="hero-text">
+                    <p class="product-sans-font">Mocha Late</p>
+                    <p class="google-sans-font">Coffee is a brewed drink prepared
+                        from roasted coffee beans, the seeds of berries from certain Coffea species.</p>
+                    <pre class="product-sans-font">1 Bag                                            $69.99</pre>
+                </div>
             </div>
             <div class="hero-banner">
                 <div class="text-banner">
                     <p class="text-banner-color">Be Active</p>
-                    <p class="Ps fs">Barnsley Brew Coffee</p>
-                    <p class="Gs text-w">Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain
+                    <p class="product-sans-font title-barsley-coffee">Barnsley Brew Coffee</p>
+                    <p class="google-sans-font text-below-barnsley-coffee">Coffee is a brewed drink prepared from
+                        roasted coffee beans, the seeds of berries from certain
                         Coffea species. When coffee berries turn from.</p>
-                    <p >Top Packs</p>
+                    <p>Top Packs</p>
                 </div>
                 <div class="coffee-list">
                     <div class="coffee-item ">
                         <div>
-                            <img src="assets/Iced Coffee.png" alt="Iced coffee" srcset="">
-                            <p class="Ps">Iced Coffee</p>
-                            <p class="Gs">Coffee is a brewed drink prepared 
+                            <img src="assets/iced-coffee.png" alt="Iced coffee">
+                            <p class="product-sans-font">Iced Coffee</p>
+                            <p class="google-sans-font">Coffee is a brewed drink prepared
                                 from roasted coffee beans, the seeds of berries from certain Coffea species.</p>
                         </div>
                     </div>
-                    <div class="coffee-item coffee2">
+                    <div class="coffee-item caramel-frappe-coffee">
                         <div>
-                            <img src="assets/Caramel Frappe.png" alt="Caramel Frappe" srcset="">
-                            <p class="Ps">Caramel Frappe</p>
-                            <p class="Gs">Coffee is a brewed drink prepared 
+                            <img src="assets/caramel-frappe.png" alt="Caramel Frappe">
+                            <p class="product-sans-font">Caramel Frappe</p>
+                            <p class="google-sans-font">Coffee is a brewed drink prepared
                                 from roasted coffee beans, the seeds of berries from certain Coffea species.</p>
                         </div>
                     </div>
-                    <div class="coffee-item coffee3">
+                    <div class="coffee-item mocha-late-coffee">
                         <div>
-                            <img src="assets/MOcha Late 02.png" alt="Mocha Late" srcset="">
-                            <p class="Ps">Mocha Late</p>
-                            <p class="Gs">Coffee is a brewed drink prepared 
+                            <img src="assets/mocha-late.png" alt="Mocha Late">
+                            <p class="product-sans-font">Mocha Late</p>
+                            <p class="google-sans-font">Coffee is a brewed drink prepared
                                 from roasted coffee beans, the seeds of berries from certain Coffea species.</p>
                         </div>
                     </div>
                     <div>
-                        <div class="coffee-item viewmore" >
-                            <img src="assets/image 2.png" alt="view more" srcset="">
-                            <p class="Ps">View More</p>
-    
+                        <div class="coffee-item view-more-img">
+                            <img src="assets/view-more.png" alt="view more">
+                            <p class="product-sans-font">View More</p>
                         </div>
                     </div>
                 </div>
-
             </div>
-
         </div>
-
         <div class="grid-items">
             <div class="coffee-item">
                 <div>
-                    <img src="assets/MOcha Late 02.png" alt="Mocha Late" srcset="">
-                    <p class="Ps">Mocha Late</p>
-                    <p class="Gs">Coffee is a brewed drink prepared 
+                    <img src="assets/mocha-late.png" alt="Mocha Late">
+                    <p class="product-sans-font">Mocha Late</p>
+                    <p class="google-sans-font">Coffee is a brewed drink prepared
                         from roasted coffee beans, the seeds of berries from certain Coffea species.</p>
                 </div>
             </div>
             <div class="coffee-item">
                 <div>
-                    <img src="assets/MOcha Late 02.png" alt="Mocha Late" srcset="">
-                    <p class="Ps">Mocha Late</p>
-                    <p class="Gs">Coffee is a brewed drink prepared 
+                    <img src="assets/mocha-late.png" alt="Mocha Late">
+                    <p class="product-sans-font">Mocha Late</p>
+                    <p class="google-sans-font">Coffee is a brewed drink prepared
                         from roasted coffee beans, the seeds of berries from certain Coffea species.</p>
                 </div>
             </div>
             <div class="coffee-item">
                 <div>
-                    <img src="assets/MOcha Late 02.png" alt="Mocha Late" srcset="">
-                    <p class="Ps">Mocha Late</p>
-                    <p class="Gs">Coffee is a brewed drink prepared 
+                    <img src="assets/mocha-late.png" alt="Mocha Late">
+                    <p class="product-sans-font">Mocha Late</p>
+                    <p class="google-sans-font">Coffee is a brewed drink prepared
                         from roasted coffee beans, the seeds of berries from certain Coffea species.</p>
                 </div>
             </div>
             <div class="coffee-item">
                 <div>
-                    <img src="assets/MOcha Late 02.png" alt="Mocha Late" srcset="">
-                    <p class="Ps">Mocha Late</p>
-                    <p class="Gs">Coffee is a brewed drink prepared 
+                    <img src="assets/mocha-late.png" alt="Mocha Late">
+                    <p class="product-sans-font">Mocha Late</p>
+                    <p class="google-sans-font">Coffee is a brewed drink prepared
                         from roasted coffee beans, the seeds of berries from certain Coffea species.</p>
                 </div>
             </div>
             <div class="coffee-item">
                 <div>
-                    <img src="assets/Double espresso-1.png" alt="Double espresso" srcset="">
-                    <p class="Ps">Double Espresso</p>
-                    <p class="Gs">Coffee is a brewed drink prepared 
+                    <img src="assets/double-espresso.png" alt="Double espresso">
+                    <p class="product-sans-font">Double Espresso</p>
+                    <p class="google-sans-font">Coffee is a brewed drink prepared
                         from roasted coffee beans, the seeds of berries from certain Coffea species.</p>
                 </div>
             </div>
             <div class="coffee-item">
                 <div>
-                    <img src="assets/Double espresso-1.png" alt="Double espresso" srcset="">
-                    <p class="Ps">Double Espresso</p>
-                    <p class="Gs">Coffee is a brewed drink prepared 
+                    <img src="assets/double-espresso.png" alt="Double espresso">
+                    <p class="product-sans-font">Double Espresso</p>
+                    <p class="google-sans-font">Coffee is a brewed drink prepared
                         from roasted coffee beans, the seeds of berries from certain Coffea species.</p>
                 </div>
             </div>
             <div class="coffee-item">
                 <div>
-                    <img src="assets/Double espresso-1.png" alt="Double espresso" srcset="">
-                    <p class="Ps">Double Espresso</p>
-                    <p class="Gs">Coffee is a brewed drink prepared 
+                    <img src="assets/double-espresso.png" alt="Double espresso">
+                    <p class="product-sans-font">Double Espresso</p>
+                    <p class="google-sans-font">Coffee is a brewed drink prepared
                         from roasted coffee beans, the seeds of berries from certain Coffea species.</p>
                 </div>
             </div>
             <div class="coffee-item">
                 <div>
-                    <img src="assets/Double espresso-1.png" alt="Double espresso" srcset="">
-                    <p class="Ps">Double Espresso</p>
-                    <p class="Gs">Coffee is a brewed drink prepared 
+                    <img src="assets/double-espresso.png" alt="Double espresso">
+                    <p class="product-sans-font">Double Espresso</p>
+                    <p class="google-sans-font">Coffee is a brewed drink prepared
                         from roasted coffee beans, the seeds of berries from certain Coffea species.</p>
                 </div>
             </div>
         </div>
-
     </div>
     <script src="index.js"></script>
 </body>
+
 </html>

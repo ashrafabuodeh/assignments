@@ -1,52 +1,25 @@
-@font-face{
-  font-family: "google sans" ;
+@font-face {
+  font-family: "google sans";
   src: url(./fonts/google-sans-cufonfonts-webfont/ProductSans-Light.woff);
 }
 
-
-@font-face{
-  font-family: "products san" ;
-  src: url(./fonts/FontsFree-Net-ProductSans-Regular.ttf);
+@font-face {
+  font-family: "products san";
+  src:
+    url(./fonts/FontsFree-Net-ProductSans-Regular.ttf);
 }
 
-body{
+body {
   background: #E5E5E5;
 }
 
-.wrapper{
+.wrapper {
   margin: 0 auto;
   max-width: 1440px;
+  width: 100%;
 }
 
-@media  screen and (max-width :1250px){
-  .hero-image {
-    display: none;
-  
-  }
-}
-
-@media  screen and (max-width :1050px){
-  .viewmore {
-    display: none;
-  
-  }
-}
-
-
-@media  screen and (max-width :621px){
-  .coffee2 {
-    display: none;
-  }
-}
-
-@media  screen and (max-width :926px){
-  .coffee3 {
-    display: none;
-  
-  }
-}
-
-.header{
+.header {
   align-items: center;
   display: flex;
   height: 80px;
@@ -54,108 +27,187 @@ body{
   width: 100%;
 }
 
-.menue-item:hover{
+.left-header-images {
+  display: flex;
+}
+
+.menu-item:hover {
   background-color: red;
 }
 
-.active{
+.active {
   background-color: yellow;
 }
 
-.Nav-items{
+.nav-items {
   margin: 15px;
   text-decoration: none;
 }
 
-.main{
+.main {
   display: flex;
-  margin-top: 60px;
-  padding-bottom: 32px;
-  
+  margin-top: 20px;
+  padding: 0 0 32px 0;
+  width: 100%;
 }
 
-.hero-image{
+.hero-image {
   background-color: white;
-  min-width: 320px;
-  margin-left: 10px;
+  margin: 75px 0 0 0;
 }
 
-.img-profile{
-  height: 55px;
-  width: 200px;
+.img-profile {
+  width: 55px;
 }
 
-.same-size{
-  height: 50px;
-  margin-top: 10px;
+.shopping-cart-size {
+  width: 20px;
+}
+
+.coffee-bens-size {
   width: 40px;
 }
 
-.hero-text{
+.hero-text {
   text-align: center;
 }
 
-.Gs{
+.google-sans-font {
   font-family: 'google sans';
-  text-align: center  ;
- 
+  text-align: center;
 }
 
-.text-w{
+.text-below-barnsley-coffee {
   width: 390px;
+  text-align: left;
 }
 
-.Ps{
+.product-sans-font {
   font-family: "products san";
   text-align: center;
 }
 
-.hero-banner{
+.hero-banner {
   flex: 1;
 }
 
-.text-banner{
+.text-banner {
+  margin: 35px 0 0 60px;
   padding: 10px 30px;
 }
 
-.coffee-list{
+.coffee-list {
   align-items: center;
   display: flex;
   justify-content: space-around;
 }
 
-.coffee-item{
+.coffee-item {
   background-color: white;
   height: 450px;
   margin: 50px;
   width: 217px;
-
 }
 
-.grid-items{
+.grid-items {
   background: linear-gradient(180deg, rgba(228, 239, 233, 0) 0%, #ECF8F1 6.25%);
   display: grid;
   grid-gap: 32px;
   grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-  padding-top: 3rem;
+  padding: 3rem 0 0 0;
 }
 
-.viewmore{
+.view-more-img {
   height: 10px;
   width: 90px;
 }
-  
-.text-banner-color{
- color: red;
- font-family: "products san";
-}   
 
-.fs{
-  font-size: 40px;
-  margin-top: 20px;
+.text-banner-color {
+  color: red;
+  font-family: "products san";
+}
+
+.all-links-navbar {
+  display: flex;
+}
+
+.title-barsley-coffee {
+  font-size: 60px;
+  margin: 20px 0 0 0;
   text-align: start;
 }
 
-.coffeebens{
-  margin-left: 45px;
+.coffee-bens {
+  margin: 0 0 0 45px;
+}
+
+.icon-menu {
+  width: 35px;
+  display: none;
+  margin-left: 10px;
+}
+
+.display-Burger-icon{
+  visibility: visible;
+}
+
+@media screen and (max-width :1250px) {
+  .hero-image {
+    display: none;
+  }
+}
+
+@media screen and (max-width :1050px) {
+  .viewmore {
+    display: none;
+  }
+}
+
+@media screen and (max-width :621px) {
+  .caramel-frappe-coffee {
+    display: none;
+  }
+}
+
+@media screen and (max-width :926px) {
+  .mocha-late-coffee {
+    display: none;
+  }
+}
+
+@media screen and (max-width :500px) {
+  .img-profile {
+    display: none;
+  }
+
+  .shopping-cart-size {
+    display: none;
+  }
+}
+
+@media screen and (max-width :1115px) {
+  #all-links-navbar {
+    display: flex;
+    flex-direction: column;
+    margin-right: 150px;
+    margin-top: 400px;
+    visibility: hidden;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .icon-menu {
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  .nav-items {
+    align-items: center;
+    background-color: rgb(145, 139, 139);
+    border: 1px solid black;
+    color: white;
+    margin: 0;
+    padding: 20px 20px 20px 20px;
+    width: 100%;
+  }
 }

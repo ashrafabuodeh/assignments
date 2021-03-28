@@ -53,7 +53,7 @@ function adduser(email, companyName, password, city) {
     const convertToJSON = JSON.stringify(user);
     if (localStorage.getItem(email.value) === null) {
         localStorage.setItem(email.value, convertToJSON);
-        location.replace("/task_1/index.html");
+        location.replace("../task_1/index.html");   
     } else {
         document.getElementById("email-error").innerHTML = "Email is exist";
     }

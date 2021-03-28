@@ -3,6 +3,7 @@ const companyName = document.getElementById("company-name");
 const password = document.getElementById("password");
 const passwordCheck = document.getElementById("password-check");
 const city = document.getElementById("city");
+
 function checkValidate(e) {
     e.preventDefault();
     let check = true;
@@ -38,9 +39,10 @@ function checkValidate(e) {
     } else {
         document.getElementById("option-error").innerHTML = "";
     }
-    if(check)
-    adduser(email, companyName, password, city);
+    if (check)
+        adduser(email, companyName, password, city);
 }
+
 function adduser(email, companyName, password, city) {
     const user = {
         email: email.value,
@@ -49,16 +51,10 @@ function adduser(email, companyName, password, city) {
         city: city.value,
     };
     const convertToJSON = JSON.stringify(user);
-    for(let i = 0; i < localStorage.length; i++)
-    {
-        if(localStorage.getItem(email.value) === null)
-        {
+    if (localStorage.getItem(email.value) === null) {
         localStorage.setItem(email.value, convertToJSON);
-        location.replace("../task_1/index.html");
-        }
-        else
-        {
-            document.getElementById("email-error").innerHTML = "This email is exist";
-        }
+        location.replace("/task_1/index.html");
+    } else {
+        document.getElementById("email-error").innerHTML = "Email is exist";
     }
 }

@@ -190,9 +190,9 @@ body {
     flex-direction: column;
     margin-right: 150px;
     margin-top: 400px;
+    position: relative;
     visibility: hidden;
     width: 100%;
-    z-index: 1;
   }
 
   .icon-menu {

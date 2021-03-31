@@ -4,7 +4,7 @@ const password = document.getElementById("password");
 const passwordCheck = document.getElementById("password-check");
 const city = document.getElementById("city");
 
-function checkValidate(e) {
+checkValidate = (e) => {
     e.preventDefault();
     let check = true;
     const regularExpressionForEmail = /([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+)/;
@@ -43,7 +43,7 @@ function checkValidate(e) {
         adduser(email, companyName, password, city);
 }
 
-function adduser(email, companyName, password, city) {
+adduser = (email, companyName, password, city) => {
     const user = {
         email: email.value,
         companyName: companyName.value,

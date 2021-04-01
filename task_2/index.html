@@ -1,44 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="style.css" />
-        <title>Document</title>
-    </head>
-    <body>
-        <div class="wrapper">
-            <div class="header">
-                <div class="header-title"><h1>Create Account</h1></div>
-            </div>
-            <div class="main">
-                <div class="all-elements-in-form">
-                    <form action="" name="form" onsubmit="checkValidate(event)">
-                        <p id="email-error"></p>
-                        <div class="form-field"><input type="text" class="input-field" id="email" placeholder="Email Address" /></div>
-                        <p id="company-error"></p>
-                        <div class="form-field"><input type="text" class="input-field" id="company-name" placeholder="Company Name" /></div>
-                        <p id="password-error"></p>
-                        <div class="form-field"><input type="password" class="input-field" id="password" placeholder="Password" /></div>
-                        <p id="password-check-error"></p>
-                        <div class="form-field"><input type="password" class="input-field" id="password-check" placeholder="Confirm password" /></div>
-                        <div class="form-field">
-                            <p id="option-error"></p>
-                            <select id="city" class="selector-field">
-                                <option default disabled selected hidden>Choose Your City</option>
-                                <option value="Jordan">Jordan</option>
-                                <option value="Japan">Japan</option>
-                                <option value="America">America</option>
-                                <option value="Oman">Oman</option>
-                            </select>
-                        </div>
-                        <div class="form-field"><button type="submit" class="submit-field">Submit</button></div>
-                    </form>
-                </div>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Validtion</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="header-title">
+                <h1>Create Account</h1>
             </div>
         </div>
-        <script src="index.js"></script>
-    </body>
-    
+        <div class="main">
+            <form action="" onsubmit="checkValidate(event)">
+                <div class="form-field">
+                    <input type="text" class="input-field" id="email" placeholder="Email Address" />
+                    <p id="email-error"></p>
+                </div>
+                <div class="form-field">
+                    <input type="text" class="input-field" id="company-name" placeholder="Company Name" />
+                    <p id="company-error"></p>
+                </div>
+                <div class="form-field">
+                    <input type="password" class="input-field" id="password" placeholder="Password" minlength="8" />
+                    <p id="password-error"></p>
+                </div>
+                <div class="form-field">
+                    <input type="password" class="input-field" id="password-check" placeholder="Confirm password" />
+                    <p id="password-check-error"></p>
+                </div>
+                <div class="form-field">
+                    <select id="city" class="input-field selector-field">
+                        <option default disabled selected hidden class="selector-field">Choose Your City</option>
+                        <option value="Jordan">Jordan</option>
+                        <option value="Japan">Japan</option>
+                        <option value="America">America</option>
+                        <option value="Oman">Oman</option>
+                    </select>
+                    <p id="option-error"></p>
+                </div>
+                <div class="form-field">
+                    <button type="submit" class="input-field submit-field">CREATE ACCOUNT</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
 </html>

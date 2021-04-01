@@ -1,76 +1,68 @@
-const city = document.getElementById("city");
-const companyName = document.getElementById("company-name");
-const email = document.getElementById("email");
-const password = document.getElementById("password");
-const passwordCheck = document.getElementById("password-check");
-const regularExpressionForEmail = /([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+)/;
-const regularExpressionForPassword = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,}$/;
-
-checkValidate = (e) => {
+checkFormInputValidate = (e) => {
+    const city = document.forms['form']['city'].value??'';
+    const companyName = document.forms['form']['companyName'].value??'';
+    const email = document.forms['form']['email'].value??'';
+    const password = document.forms['form']['password'].value??'';
+    const passwordCheck = document.forms['form']['passwordCheck'].value??'';
+    const regularExpressionForPassword = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,}$/;
     e.preventDefault();
     let check = true;
-    if (email.value === '') {
-        document.getElementById("email-error").innerHTML = "Please enter an email";
-        check = false;
-    } else
-    if (!regularExpressionForEmail.test(email.value)) {
-        document.getElementById("email-error").innerHTML = "Email is not valid";
+    if (companyName === "") {
+        errorDisplay("company-error");
         check = false;
     } else {
-        document.getElementById("email-error").innerHTML = "";
+        document.getElementById("company-error").style.display = "none";
     }
-    if (companyName.value === "") {
-        document.getElementById("company-error").innerHTML = "Company name can't be empty";
+    if (!regularExpressionForPassword.test(password)) {
+        errorDisplay("password-error");
         check = false;
     } else {
-        document.getElementById("company-error").innerHTML = "";
-    }
-    if (!regularExpressionForPassword.test(password.value)) {
-        document.getElementById("password-error").innerHTML = "Password must contains a mix of letters, numbers & symbols";
-        check = false;
-    } else {
-        document.getElementById("password-error").innerHTML = "";
-        if (password.value !== passwordCheck.value) {
-            document.getElementById("password-check-error").innerHTML = "Passwords don't match";
+        document.getElementById("password-error").style.display = "none";
+        if (password !== passwordCheck) {
+            errorDisplay("password-check-error");
             check = false;
         } else {
-            document.getElementById("password-check-error").innerHTML = "";
+            document.getElementById("password-check-error").style.display = "none";
         }
     }
-    if (city.value === "Choose Your City") {
-        document.getElementById("option-error").innerHTML = "please select a City ";
+    if (city === "Choose Your City") {
+        errorDisplay("option-error");
         check = false;
     } else {
-        document.getElementById("option-error").innerHTML = "";
+        document.getElementById("option-error").style.display = "none";
     }
-    if (check)
-    {
-        const user = new User(email , companyName , password , city);
-        addUser(user);
-    }
-}
-
-addUser = user => {
-    const convertToJSON = JSON.stringify(user.personInfo);
-    if (localStorage.getItem(user.personInfo.email) === null) {
-        localStorage.setItem(user.personInfo.email, convertToJSON);
-        location.replace("../task_1/index.html");   
-    } else {
-        document.getElementById("email-error").innerHTML = "This email already exists";
+    if (check) {
+        const user = new User(email, companyName, password, city);
+        user.addUser();
     }
 }
 
-class User{
+
+errorDisplay = (errorId) => {
+    document.getElementById(errorId).style.display = "block";
+}
+
+class User {
     personInfo = {
         email: '',
         companyName: '',
         password: '',
         city: ''
     };
-    constructor(email , companyName , password , city){
-        this.personInfo.email = email.value ;
-        this.personInfo.companyName = companyName.value,
-        this.personInfo.password = password.value ,
-        this.personInfo.city = city.value
+    constructor(email, companyName, password, city) {
+        this.personInfo.email = email;
+        this.personInfo.companyName = companyName,
+        this.personInfo.password = password,
+        this.personInfo.city = city
+    }
+
+    addUser = () => {
+        const userStringify = JSON.stringify(this.personInfo);
+        if (localStorage.getItem(this.personInfo.email) === null) {
+            localStorage.setItem(this.personInfo.email, userStringify);
+            location.replace("../task_1/index.html");
+        } else {
+            document.getElementById('email-error').style.display = "block";
+        }
     }
 }

@@ -14,39 +14,44 @@
                 <h1>Create Account</h1>
             </div>
         </div>
-        <div class="main">
-            <form action="" onsubmit="checkValidate(event)">
-                <div class="form-field">
-                    <input type="text" class="input-field" id="email" placeholder="Email Address" />
-                    <p id="email-error"></p>
-                </div>
-                <div class="form-field">
-                    <input type="text" class="input-field" id="company-name" placeholder="Company Name" />
-                    <p id="company-error"></p>
-                </div>
-                <div class="form-field">
-                    <input type="password" class="input-field" id="password" placeholder="Password" minlength="8" />
-                    <p id="password-error"></p>
-                </div>
-                <div class="form-field">
-                    <input type="password" class="input-field" id="password-check" placeholder="Confirm password" />
-                    <p id="password-check-error"></p>
-                </div>
-                <div class="form-field">
-                    <select id="city" class="input-field selector-field">
-                        <option default disabled selected hidden class="selector-field">Choose Your City</option>
-                        <option value="Jordan">Jordan</option>
-                        <option value="Japan">Japan</option>
-                        <option value="America">America</option>
-                        <option value="Oman">Oman</option>
-                    </select>
-                    <p id="option-error"></p>
-                </div>
-                <div class="form-field">
-                    <button type="submit" class="input-field submit-field">CREATE ACCOUNT</button>
-                </div>
-            </form>
-        </div>
+        <form action="" onsubmit="checkFormInputValidate(event)" class="main" name="form">
+            <div class="form-field">
+                <label>Email</label>
+                <input type="email" class="input-field" name="email" placeholder="Email Address" required>
+                <div id="email-error" class="display-error">This email already exists</div>
+            </div>
+            <div class="form-field">
+                <label>Company Name</label>
+                <input type="text" class="input-field" name="companyName" placeholder="Company Name" />
+                <div id="company-error" class="display-error">Company name can't be empty</div>
+            </div>
+            <div class="form-field">
+                <label>Password</label>
+                <input type="password" class="input-field" name="password" placeholder="Password" minlength="8" />
+                <div id="password-error" class="display-error">Password must contains a mix of letters, numbers &
+                    symbols</div>
+            </div>
+            <div class="form-field">
+                <label>Confirm Password</label>
+                <input type="password" class="input-field" name="passwordCheck" placeholder="Confirm password"
+                    minlength="8" />
+                <div id="password-check-error" class="display-error">Passwords don't match</div>
+            </div>
+            <div class="form-field">
+                <label>Choose Your City</label>
+                <select name="city" class="input-field">
+                    <option default disabled selected hidden class="selector-field">Choose Your City</option>
+                    <option value="Jordan">Jordan</option>
+                    <option value="Japan">Japan</option>
+                    <option value="America">America</option>
+                    <option value="Oman">Oman</option>
+                </select>
+                <div id="option-error" class="display-error">please select a City </div>
+            </div>
+            <div class="form-field">
+                <button type="submit" class="input-field submit-field">create account</button>
+            </div>
+        </form>
     </div>
     <script src="index.js"></script>
 </body>

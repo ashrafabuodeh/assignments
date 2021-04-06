@@ -13,19 +13,18 @@ checkFormInputValidate = (e) => {
 
 
 class Account {
-    isValidateAccount = true;
     constructor({email, companyName, password, passwordCheck, city}){
-           this.email = email;
-           this.companyName = companyName,
-           this.password = password,
-           this.passwordCheck = passwordCheck,
-           this.city = city
+          this.city = city,
+          this.companyName = companyName,
+          this.email = email;
+          this.isValidateAccount = true,
+          this.password = password,
+          this.passwordCheck = passwordCheck
     }
 
     /**
-     * set accounts for users and check if the account for user is exist, then add it to local storage
+     * Set accounts for users and check if the account for user is exist, then add  account details to local storage as object
      */
- 
     setAccount = () => {
         const accountStringify = JSON.stringify(this);
         if (this.isValidateAccount)
@@ -38,9 +37,8 @@ class Account {
     }
 
      /**
-     * check validate for account by calling all validates input in form
+     * Check validate for account by calling all validates input in form
      */
-
       validateAccount = () => {
         this.validateCity();
         this.validateCompanyName();
@@ -48,9 +46,8 @@ class Account {
     }
 
     /**
-     * check validate for city if the user choose city or not 
+     * Check validate for city if the user choose city or not 
      */
-
     validateCity = () => {
         if (this.city === "Choose Your City") {
             displayError("option-error");
@@ -61,11 +58,10 @@ class Account {
     }
 
     /**
-     * check validate for company Name if it is empty or not 
+     * Check validate for company Name if it is empty or not 
      */
-
     validateCompanyName = () => {
-        if (this.companyName === '') {
+        if (this.companyName.trim() ==='') {
             displayError("company-error");
             this.isValidateAccount = false;
         } else {
@@ -74,9 +70,8 @@ class Account {
     }
 
     /**
-     * check validate for password by regular expression 
+     * Check validate for password by regular expression 
      */
-
     validatePassword = () => {
         const regularExpressionForPassword = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,}$/;
         if (!regularExpressionForPassword.test(this.password)) {
@@ -89,9 +84,8 @@ class Account {
     }
 
     /**
-     * check validate for confirm password if it is the same for the original password
+     * Check validate for confirm password if it is the same for the original password
      */
-
     validatePasswordCheker = () => {
         if (this.password !== this.passwordCheck) {
             displayError("password-check-error");
